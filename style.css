@@ -1,0 +1,48 @@
+/* Global view aka Desktop view */
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: aqua;
+  min-height: 500px;
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.hide-desktop-only {
+  display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+/* Tablet view */
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+  .hide-desktop-only {
+    display: block;
+  }
+}
+
+/* mobile view */
+
+@media (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
