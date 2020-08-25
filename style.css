@@ -1,6 +1,6 @@
 /* Global view aka Desktop view */
 body {
-  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -13,10 +13,15 @@ body {
 }
 .col {
   width: 30%;
-  margin-bottom: 30px;
-  background-color: aqua;
+  margin-bottom: 40px;
+  background-color: rgb(2, 54, 54);
 }
-
+.col p {
+  color: white;
+  font-size: 0.875rem;
+  padding: 20px 25px;
+  line-height: 1.5rem;
+}
 .hide-desktop-only {
   display: none;
 }
@@ -24,6 +29,10 @@ body {
 .col img {
   width: 100%;
   height: auto;
+}
+
+.col p::first-line {
+  font-weight: 400;
 }
 /* Tablet view */
 @media (max-width: 768px) {
