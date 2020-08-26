@@ -67,6 +67,7 @@ header {
 .mob-wrapper {
   display: none;
 }
+
 /* Tablet view */
 @media (max-width: 768px) {
   .col {
