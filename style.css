@@ -110,6 +110,7 @@ header {
     padding-right: 30px;
   }
   .mob-nav {
+    display: block;
     position: absolute;
   }
   .mob-button {
